@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/vars.css" />
+    <link rel="stylesheet" href="styles/ui-kit.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>PowerUp | For business</title>
+  </head>
+  <body class="white p2">
+    <header class="header m-block">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__left-part">
+            <a href="index.html" class="logo-link">
+              <img src="./img/logo.svg" alt="PowerUp" class="img-dark" />
+              <img src="./img/logo-white.svg" alt="PowerUp" class="img-white" />
+            </a>
+            <div class="language-selection">
+              <div class="language-selection__icon">
+                <img
+                  src="./img/icons/dark/globe.svg"
+                  alt="Globe"
+                  class="img-dark"
+                />
+                <img
+                  src="./img/icons/white/globe-white.svg"
+                  alt="Globe"
+                  class="img-white"
+                />
+              </div>
+              <div class="language-selection__btns">
+                <button
+                  class="language-selection__btn language__active"
+                  value="eng"
+                >
+                  En
+                </button>
+                <button class="language-selection__btn" value="pl">Pl</button>
+              </div>
+            </div>
+          </div>
+          <div class="header__right-part">
+            <div class="header__right-part_btns">
+              <a
+                href="for-business.html"
+                class="btn btn-second"
+                data-lang="for-business"
+              >
+                For business
+              </a>
+              <button class="btn btn-main" data-lang="download-app">
+                Download app
+              </button>
+            </div>
+            <div class="header__change-theme white-theme">
+              <button data-theme="white" class="white-theme__btn">
+                <img
+                  src="./img/icons/dark/sun.svg"
+                  alt="white theme"
+                  class="sun-img-dark"
+                />
+                <img
+                  src="./img/icons/white/sun-white.svg"
+                  alt="white theme"
+                  class="sun-img-white"
+                />
+              </button>
+              <button data-theme="dark" class="dark-theme__btn">
+                <img
+                  src="./img/icons/white/moon-white.svg"
+                  alt="dark theme"
+                  class="moon-img-white"
+                />
+                <img
+                  src="./img/icons/dark/moon.svg"
+                  alt="dark theme"
+                  class="moon-img-dark"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="header__nav-btn">
+            <button class="nav-icon-btn__open">
+              <img src="./img/icons/dark/burger.svg" alt="Burger" />
+            </button>
+            <button class="nav-icon-btn__close">
+              <img src="./img/icons/dark/close.svg" alt="Burger" />
+            </button>
+          </div>
+          <div class="header-contacts__burger-open">
+            <ul class="header-contacts__social">
+              <li class="header-contacts__social_item">
+                <a href="#">
+                  <img
+                    src="./img/icons/dark/facebook.svg"
+                    alt="facebook"
+                    class="img-dark"
+                  />
+                  <img
+                    src="./img/icons/white/facebook-white.svg"
+                    alt="facebook"
+                    class="img-white"
+                  />
+                </a>
+              </li>
+              <li class="header-contacts__social_item">
+                <a href="#">
+                  <img
+                    src="./img/icons/dark/instagram.svg"
+                    alt="instagram"
+                    class="img-dark"
+                  />
+                  <img
+                    src="./img/icons/white/instagram-white.svg"
+                    alt="instagram"
+                    class="img-white"
+                  />
+                </a>
+              </li>
+              <li class="header-contacts__social_item">
+                <a href="#">
+                  <img
+                    src="./img/icons/dark/tiktok.svg"
+                    alt="tiktok"
+                    class="img-dark"
+                  />
+                  <img
+                    src="./img/icons/white/tiktok-white.svg"
+                    alt="tiktok"
+                    class="img-white"
+                  />
+                </a>
+              </li>
+              <li class="header-contacts__social_item">
+                <a href="#">
+                  <img
+                    src="./img/icons/dark/whatsapp.svg"
+                    alt="whatsapp"
+                    class="img-dark"
+                  />
+                  <img
+                    src="./img/icons/white/whatsapp-white.svg"
+                    alt="whatsapp"
+                    class="img-white"
+                  />
+                </a>
+              </li>
+            </ul>
+            <div class="header-contacts__communication">
+              <a href="mailto:powerup@gmail.com">powerup@gmail.com</a>
+              <a href="tel:+48555555555">+48 55 555 55 55</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="business__main m-block">
+      <div class="container">
+        <div class="business__main_wrapper">
+          <div class="business__main_wrapper-left">
+            <div class="business__main_info">
+              <h1 class="h1 business__main_h1" data-lang="business__main_h1">
+                Partner with Us to Power Up Your Business
+              </h1>
+              <p class="p1 business__main_p1" data-lang="business__main_p1">
+                Boost your reach and keep customers connected
+              </p>
+              <button
+                class="btn btn-main business__main_btn"
+                data-lang="business__main_btn"
+              >
+                Get Started
+              </button>
+            </div>
+            <div class="business__main_contacts">
+              <div class="business_contacts__communication">
+                <a href="mailto:powerup@gmail.com">powerup@gmail.com</a>
+                <a href="tel:+48555555555">+48 55 555 55 55</a>
+              </div>
+              <ul class="business_contacts__social">
+                <li class="business_contacts__social_item">
+                  <a href="#">
+                    <img
+                      src="./img/icons/dark/facebook.svg"
+                      alt="facebook"
+                      class="img-dark"
+                    />
+                    <img
+                      src="./img/icons/white/facebook-white.svg"
+                      alt="facebook"
+                      class="img-white"
+                    />
+                  </a>
+                </li>
+                <li class="business_contacts__social_item">
+                  <a href="#">
+                    <img
+                      src="./img/icons/dark/instagram.svg"
+                      alt="instagram"
+                      class="img-dark"
+                    />
+                    <img
+                      src="./img/icons/white/instagram-white.svg"
+                      alt="instagram"
+                      class="img-white"
+                    />
+                  </a>
+                </li>
+                <li class="business_contacts__social_item">
+                  <a href="#">
+                    <img
+                      src="./img/icons/dark/tiktok.svg"
+                      alt="tiktok"
+                      class="img-dark"
+                    />
+                    <img
+                      src="./img/icons/white/tiktok-white.svg"
+                      alt="tiktok"
+                      class="img-white"
+                    />
+                  </a>
+                </li>
+                <li class="business_contacts__social_item">
+                  <a href="#">
+                    <img
+                      src="./img/icons/dark/whatsapp.svg"
+                      alt="whatsapp"
+                      class="img-dark"
+                    />
+                    <img
+                      src="./img/icons/white/whatsapp-white.svg"
+                      alt="whatsapp"
+                      class="img-white"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="business__main_img">
+            <img src="img/business__main_img.png" alt="business__main_img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="counts m-block">
+      <div class="container">
+        <h2 class="h2 counts__h2 mb-40" data-lang="counts__h2">
+          Make Money by Offering a Smarter Service
+        </h2>
+        <div class="counts__wrapper">
+          <div class="counts__wrapper_item">
+            <h3 class="h3 counts__h3" data-lang="counts__h3_1">700+</h3>
+            <p class="p2 counts__p2" data-lang="counts__p2_1">
+              businesses already partner with us.
+            </p>
+          </div>
+          <div class="counts__wrapper_item">
+            <h3 class="h3 counts__h3" data-lang="counts__h3_2">99%</h3>
+            <p class="p2 counts__p2" data-lang="counts__p2_2">
+              customer satisfaction rate with our service.
+            </p>
+          </div>
+          <div class="counts__wrapper_item">
+            <h3 class="h3 counts__h3" data-lang="counts__h3_3">24/7</h3>
+            <p class="p2 counts__p2" data-lang="counts__p2_3">
+              support to ensure seamless operations.
+            </p>
+          </div>
+          <div class="counts__wrapper_item">
+            <h3 class="h3 counts__h3" data-lang="counts__h3_4">1M+</h3>
+            <p class="p2 counts__p2" data-lang="counts__p2_4">
+              devices charged globally.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="places m-block">
+      <div class="container">
+        <span class="span places__span mb-40" data-lang="places__span">
+          Ideal Business Locations
+        </span>
+        <h2 class="h2 places__h2" data-lang="places__h2">
+          Perfect FOR High-Traffic Businesses
+        </h2>
+        <p class="p2 places__p2" data-lang="places__p2">
+          Provide a convenient charging solution that enhances your customers’
+          experience while generating extra income for your business.
+        </p>
+        <div class="places__wrapper">
+          <div class="places__item">
+            <div class="places__img">
+              <div class="places__img_static">
+                <img src="./img/icons/dark/1.svg" alt="1" class="img-dark" />
+                <img src="./img/icons/white/1.svg" alt="1" class="img-white" />
+              </div>
+              <div class="places__img_dynamic">
+                <img src="img/icons/gradient/1.svg" alt="1" />
+              </div>
+            </div>
+            <h3 class="h3 places__h3" data-lang="places__h3_1">
+              Shopping Mall
+            </h3>
+          </div>
+          <div class="places__item">
+            <div class="places__img">
+              <div class="places__img_static">
+                <img src="./img/icons/dark/2.svg" alt="2" class="img-dark" />
+                <img src="./img/icons/white/2.svg" alt="2" class="img-white" />
+              </div>
+              <div class="places__img_dynamic">
+                <img src="img/icons/gradient/2.svg" alt="2" />
+              </div>
+            </div>
+            <h3 class="h3 places__h3" data-lang="places__h3_2">
+              Convenience Store
+            </h3>
+          </div>
+          <div class="places__item">
+            <div class="places__img">
+              <div class="places__img_static">
+                <img src="./img/icons/dark/3.svg" alt="3" class="img-dark" />
+                <img src="./img/icons/white/3.svg" alt="3" class="img-white" />
+              </div>
+              <div class="places__img_dynamic">
+                <img src="img/icons/gradient/3.svg" alt="3" />
+              </div>
+            </div>
+            <h3 class="h3 places__h3" data-lang="places__h3_3">Airport</h3>
+          </div>
+          <div class="places__item">
+            <div class="places__img">
+              <div class="places__img_static">
+                <img src="./img/icons/dark/4.svg" alt="4" class="img-dark" />
+                <img src="./img/icons/white/4.svg" alt="4" class="img-white" />
+              </div>
+              <div class="places__img_dynamic">
+                <img src="img/icons/gradient/4.svg" alt="4" />
+              </div>
+            </div>
+            <h3 class="h3 places__h3" data-lang="places__h3_4">Spa</h3>
+          </div>
+          <div class="places__item">
+            <div class="places__img">
+              <div class="places__img_static">
+                <img src="./img/icons/dark/5.svg" alt="5" class="img-dark" />
+                <img src="./img/icons/white/5.svg" alt="5" class="img-white" />
+              </div>
+              <div class="places__img_dynamic">
+                <img src="img/icons/gradient/5.svg" alt="5" />
+              </div>
+            </div>
+            <h3 class="h3 places__h3" data-lang="places__h3_5">Gym</h3>
+          </div>
+          <div class="places__item">
+            <div class="places__img">
+              <div class="places__img_static">
+                <img src="./img/icons/dark/6.svg" alt="6" class="img-dark" />
+                <img src="./img/icons/white/6.svg" alt="6" class="img-white" />
+              </div>
+              <div class="places__img_dynamic">
+                <img src="img/icons/gradient/6.svg" alt="6" />
+              </div>
+            </div>
+            <h3 class="h3 places__h3" data-lang="places__h3_6">
+              Co-Working Space
+            </h3>
+          </div>
+          <div class="places__item">
+            <div class="places__img">
+              <div class="places__img_static">
+                <img src="./img/icons/dark/7.svg" alt="7" class="img-dark" />
+                <img src="./img/icons/white/7.svg" alt="7" class="img-white" />
+              </div>
+              <div class="places__img_dynamic">
+                <img src="img/icons/gradient/7.svg" alt="7" />
+              </div>
+            </div>
+            <h3 class="h3 places__h3" data-lang="places__h3_7">Event Venue</h3>
+          </div>
+          <div class="places__item">
+            <div class="places__img">
+              <div class="places__img_static">
+                <img src="./img/icons/dark/8.svg" alt="8" class="img-dark" />
+                <img src="./img/icons/white/8.svg" alt="8" class="img-white" />
+              </div>
+              <div class="places__img_dynamic">
+                <img src="img/icons/gradient/8.svg" alt="8" />
+              </div>
+            </div>
+            <h3 class="h3 places__h3" data-lang="places__h3_8">Library</h3>
+          </div>
+          <div class="places__item">
+            <div class="places__img">
+              <div class="places__img_static">
+                <img src="./img/icons/dark/9.svg" alt="9" class="img-dark" />
+                <img src="./img/icons/white/9.svg" alt="9" class="img-white" />
+              </div>
+              <div class="places__img_dynamic">
+                <img src="img/icons/gradient/9.svg" alt="9" />
+              </div>
+            </div>
+            <h3 class="h3 places__h3" data-lang="places__h3_9">Restaurant</h3>
+          </div>
+          <div class="places__item">
+            <div class="places__img">
+              <div class="places__img_static">
+                <img src="./img/icons/dark/10.svg" alt="10" class="img-dark" />
+                <img
+                  src="./img/icons/white/10.svg"
+                  alt="10"
+                  class="img-white"
+                />
+              </div>
+              <div class="places__img_dynamic">
+                <img src="img/icons/gradient/10.svg" alt="10" />
+              </div>
+            </div>
+            <h3 class="h3 places__h3" data-lang="places__h3_10">Hotel</h3>
+          </div>
+          <div class="places__item">
+            <div class="places__img">
+              <div class="places__img_static">
+                <img src="./img/icons/dark/11.svg" alt="11" class="img-dark" />
+                <img
+                  src="./img/icons/white/11.svg"
+                  alt="11"
+                  class="img-white"
+                />
+              </div>
+              <div class="places__img_dynamic">
+                <img src="img/icons/gradient/11.svg" alt="11" />
+              </div>
+            </div>
+            <h3 class="h3 places__h3" data-lang="places__h3_11">
+              Beauty Salon
+            </h3>
+          </div>
+          <div class="places__item">
+            <div class="places__img">
+              <div class="places__img_static">
+                <img src="./img/icons/dark/12.svg" alt="12" class="img-dark" />
+                <img
+                  src="./img/icons/white/12.svg"
+                  alt="12"
+                  class="img-white"
+                />
+              </div>
+              <div class="places__img_dynamic">
+                <img src="img/icons/gradient/12.svg" alt="12" />
+              </div>
+            </div>
+            <h3 class="h3 places__h3" data-lang="places__h3_12">Clinic</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq m-block">
+      <div class="container">
+        <span class="span faq__span mb-40" data-lang="faq__span">
+          FAQ: Partnering with Us
+        </span>
+        <h2 class="h2 faq__h2" data-lang="faq__h2">
+          Common Questions About Collaboration
+        </h2>
+        <div class="faq__wrapper">
+          <div class="faq__item">
+            <div class="faq__item_top-wrapper">
+              <h3 class="h3 faq__h3" data-lang="faq__h3_1">
+                How can my business benefit from hosting a charging station?
+              </h3>
+              <button class="faq__btn">
+                <img src="img/arrow__faq.svg" alt="arrow" />
+              </button>
+            </div>
+            <div class="faq__answer" data-lang="faq__answer_1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+              asperiores!
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item_top-wrapper">
+              <h3 class="h3 faq__h3" data-lang="faq__h3_2">
+                What does it cost to install a charging station?
+              </h3>
+              <button class="faq__btn">
+                <img src="img/arrow__faq.svg" alt="arrow" />
+              </button>
+            </div>
+            <div class="faq__answer" data-lang="faq__answer_2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+              asperiores!
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item_top-wrapper">
+              <h3 class="h3 faq__h3" data-lang="faq__h3_3">
+                What kind of support do you offer to business partners?
+              </h3>
+              <button class="faq__btn">
+                <img src="img/arrow__faq.svg" alt="arrow" />
+              </button>
+            </div>
+            <div class="faq__answer" data-lang="faq__answer_3">
+              We provide 24/7 technical support, marketing materials, and
+              regular maintenance to ensure smooth operations.
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item_top-wrapper">
+              <h3 class="h3 faq__h3" data-lang="faq__h3_4">
+                How much space does the charging station require?
+              </h3>
+              <button class="faq__btn">
+                <img src="img/arrow__faq.svg" alt="arrow" />
+              </button>
+            </div>
+            <div class="faq__answer" data-lang="faq__answer_4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+              asperiores!
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item_top-wrapper">
+              <h3 class="h3 faq__h3" data-lang="faq__h3_5">
+                What types of businesses are ideal for hosting a charging
+                station?
+              </h3>
+              <button class="faq__btn">
+                <img src="img/arrow__faq.svg" alt="arrow" />
+              </button>
+            </div>
+            <div class="faq__answer" data-lang="faq__answer_5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+              asperiores!
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__item_top-wrapper">
+              <h3 class="h3 faq__h3" data-lang="faq__h3_6">
+                How do I get started with a partnership?
+              </h3>
+              <button class="faq__btn">
+                <img src="img/arrow__faq.svg" alt="arrow" />
+              </button>
+            </div>
+            <div class="faq__answer" data-lang="faq__answer_6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+              asperiores!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section_form m-block">
+      <div class="container">
+        <span class="span form__span mb-40" data-lang="form__span">
+          Get in Touch
+        </span>
+        <div class="form__outer-wrapper">
+          <h2 class="h2 form__h2 mb-20" data-lang="form__h2">
+            Looking to Partner or Need Support?
+          </h2>
+          <p class="p2 form__p2 mb-20" data-lang="form__p2">
+            Need help, have feedback, or want to partner with us? Fill out the
+            form below, and we’ll get back to you soon
+          </p>
+          <form action="https://formspree.io/f/xanqvodl" class="form" method="post">
+            <div class="form__wrapper">
+              <div class="input__wrapper input__wrapper-first">
+                <input
+                  type="text"
+                  placeholder="*your name"
+                  name="name"
+                  class="input-text"
+                  id="name"
+                  data-lang="placeholder__name"
+                />
+                <span class="input__error input__error-name"> oshibka </span>
+              </div>
+              <div class="input__wrapper input__wrapper-second">
+                <input
+                  type="text"
+                  placeholder="*e-mail or phone number"
+                  name="e-mail-or-phone"
+                  id="e-mail-or-phone"
+                  class="input-text"
+                  data-lang="placeholder__email_or_phone"
+                />
+                <span class="input__error input__error-name"> oshibka </span>
+              </div>
+
+              <div class="checkbox__wrapper">
+                <label for="chexbox">
+                  <input type="checkbox" name="checkbox" id="chexbox" required />
+                  <p data-lang="checkbox__p">
+                    By submitting this form, you consent to the processing of
+                    your personal data.
+                  </p>
+                </label>
+                <button class="btn btn-main form__btn" data-lang="form__send">
+                  send
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="blur__2">
+            <img src="img/blur__2.svg" alt="blur__2" />
+          </div>
+        </div>
+        <div class="form__img">
+          <img src="img/form__img.png" alt="form__img" />
+        </div>
+      </div>
+    </div>
+    <!-- попап когда форма валидирована -->
+    <div class="form__success">
+      <div class="form__success_wrapper">
+        <button class="form__success_close">
+          <img src="img/close__btn.svg" alt="close" />
+        </button>
+        <div class="form__success_wrapper-inner">
+          <h2 class="h2 form__success_h2" data-lang="form__success_h2">
+            Thank you for your submission!
+          </h2>
+          <p class="p2 form__success_p2" data-lang="form__success_p2">
+            We’ll be in touch shortly to discuss the next steps. Looking forward
+            to working with you!
+          </p>
+          <button
+            class="btn btn-main form__success_btn"
+            data-lang="form__success_btn"
+          >
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__right">
+          <div class="footer__right_logos">
+            <a href="#" class="footer__logo">
+              <img src="img/footer__logo.svg" alt="powerup" />
+            </a>
+            <div class="footer_payments_logos">
+              <img src="img/mastercard.svg" alt="mastercard" />
+              <img src="img/visa.svg" alt="visa" />
+              <img src="img/paypal.svg" alt="paypal" />
+            </div>
+          </div>
+          <div class="footer__right_links">
+            <a href="#" data-lang="become_a_partner"> Become a partner </a>
+            <a
+              href="#"
+              data-lang="find_the_nearest_station"
+              id="find_the_nearest_station"
+            >
+              Find the nearest station
+            </a>
+            <a href="#" data-lang="pricing_policy" id="pricing_policy">
+              Pricing policy
+            </a>
+            <a href="#" data-lang="faq" id="FAQ"> FAQ </a>
+          </div>
+        </div>
+        <div class="footer__left">
+          <div class="footer__left_communication">
+            <a href="mailto:powerup@gmail.com">powerup@gmail.com</a>
+            <a href="tel:48555555555">+48 55 555 55 55</a>
+          </div>
+          <div class="footer__download-links">
+            <a href="#">
+              <img src="img/download-ios.svg" alt="ios" />
+            </a>
+            <a href="#">
+              <img src="img/download-android.svg" alt="android" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom_right">
+            <p>PowerUp © 2025</p>
+            <p data-lang="all_rights_reserved">All rights reserved</p>
+            <a href="#" data-lang="policy">Policy</a>
+            <a href="#" data-lang="terms_of_use">Terms of use</a>
+          </div>
+          <div class="footer__bottom_left">
+            <ul class="contacts__social">
+              <li class="contacts__social_item">
+                <a href="#">
+                  <img
+                    src="./img/icons/white/facebook-white.svg"
+                    alt="facebook"
+                  />
+                </a>
+              </li>
+              <li class="contacts__social_item">
+                <a href="#">
+                  <img
+                    src="./img/icons/white/instagram-white.svg"
+                    alt="instagram"
+                  />
+                </a>
+              </li>
+              <li class="contacts__social_item">
+                <a href="#">
+                  <img src="./img/icons/white/tiktok-white.svg" alt="tiktok" />
+                </a>
+              </li>
+              <li class="contacts__social_item">
+                <a href="#">
+                  <img
+                    src="./img/icons/white/whatsapp-white.svg"
+                    alt="whatsapp"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="language.js"></script>
+    <script src="for-business.js"></script>
+  </body>
+</html>

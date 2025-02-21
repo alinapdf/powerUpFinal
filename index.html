@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/vars.css" />
+    <link rel="stylesheet" href="styles/ui-kit.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>PowerUp</title>
+  </head>
+  <body class="white p2">
+    <header class="header m-block">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__left-part">
+            <a href="index.html" class="logo-link">
+              <img src="./img/logo.svg" alt="PowerUp" class="img-dark" />
+              <img src="./img/logo-white.svg" alt="PowerUp" class="img-white" />
+            </a>
+            <div class="language-selection">
+              <div class="language-selection__icon">
+                <img
+                  src="./img/icons/dark/globe.svg"
+                  alt="Globe"
+                  class="img-dark"
+                />
+                <img
+                  src="./img/icons/white/globe-white.svg"
+                  alt="Globe"
+                  class="img-white"
+                />
+              </div>
+              <div class="language-selection__btns">
+                <button
+                  class="language-selection__btn language__active"
+                  value="eng"
+                >
+                  En
+                </button>
+                <button class="language-selection__btn" value="pl">Pl</button>
+              </div>
+            </div>
+          </div>
+          <div class="header__right-part">
+            <div class="header__right-part_btns">
+              <a
+                href="for-business.html"
+                class="btn btn-second"
+                data-lang="for-business"
+              >
+                For business
+              </a>
+              <button class="btn btn-main" data-lang="download-app">
+                Download app
+              </button>
+            </div>
+            <div class="header__change-theme white-theme">
+              <button data-theme="white" class="white-theme__btn">
+                <img
+                  src="./img/icons/dark/sun.svg"
+                  alt="white theme"
+                  class="sun-img-dark"
+                />
+                <img
+                  src="./img/icons/white/sun-white.svg"
+                  alt="white theme"
+                  class="sun-img-white"
+                />
+              </button>
+              <button data-theme="dark" class="dark-theme__btn">
+                <img
+                  src="./img/icons/white/moon-white.svg"
+                  alt="dark theme"
+                  class="moon-img-white"
+                />
+                <img
+                  src="./img/icons/dark/moon.svg"
+                  alt="dark theme"
+                  class="moon-img-dark"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="header__nav-btn">
+            <button class="nav-icon-btn__open">
+              <img src="./img/icons/dark/burger.svg" alt="Burger" />
+            </button>
+            <button class="nav-icon-btn__close">
+              <img src="./img/icons/dark/close.svg" alt="Burger" />
+            </button>
+          </div>
+          <div class="header-contacts__burger-open">
+            <ul class="header-contacts__social">
+              <li class="header-contacts__social_item">
+                <a href="#">
+                  <img
+                    src="./img/icons/dark/facebook.svg"
+                    alt="facebook"
+                    class="img-dark"
+                  />
+                  <img
+                    src="./img/icons/white/facebook-white.svg"
+                    alt="facebook"
+                    class="img-white"
+                  />
+                </a>
+              </li>
+              <li class="header-contacts__social_item">
+                <a href="#">
+                  <img
+                    src="./img/icons/dark/instagram.svg"
+                    alt="instagram"
+                    class="img-dark"
+                  />
+                  <img
+                    src="./img/icons/white/instagram-white.svg"
+                    alt="instagram"
+                    class="img-white"
+                  />
+                </a>
+              </li>
+              <li class="header-contacts__social_item">
+                <a href="#">
+                  <img
+                    src="./img/icons/dark/tiktok.svg"
+                    alt="tiktok"
+                    class="img-dark"
+                  />
+                  <img
+                    src="./img/icons/white/tiktok-white.svg"
+                    alt="tiktok"
+                    class="img-white"
+                  />
+                </a>
+              </li>
+              <li class="header-contacts__social_item">
+                <a href="#">
+                  <img
+                    src="./img/icons/dark/whatsapp.svg"
+                    alt="whatsapp"
+                    class="img-dark"
+                  />
+                  <img
+                    src="./img/icons/white/whatsapp-white.svg"
+                    alt="whatsapp"
+                    class="img-white"
+                  />
+                </a>
+              </li>
+            </ul>
+            <div class="header-contacts__communication">
+              <a href="mailto:powerup@gmail.com">powerup@gmail.com</a>
+              <a href="tel:+48555555555">+48 55 555 55 55</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main m-block">
+      <div class="container">
+        <h1 class="h1 main-phase">
+          <div data-lang="h1">Stay connected, wherever you are</div>
+          <div class="phrase-container">
+            <div class="phrase-wrapper">
+              <span class="dynamic-phrase" data-lang="phase-1"
+                >on the bus station</span
+              >
+            </div>
+          </div>
+        </h1>
+        <p class="p1 mb-40" data-lang="p1">
+          Vorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <div class="main__btn-wrapper">
+          <button class="btn btn-main main__btn" data-lang="find-my-powerbank">
+            Find My Power Bank
+          </button>
+          <div class="decorative-blur__1">
+            <img src="img/blur_1.svg" alt="blur" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="get-the-app m-block">
+      <div class="container">
+        <div class="get-the-app__wrapper">
+          <div class="get-the-app__left">
+            <span class="span get-the-app__span" data-lang="get-the-app__span">
+              Get the app
+            </span>
+            <div class="get-the-app__info">
+              <h2 class="h2 mb-20" data-lang="get-the-app__h2">
+                Get the App and Never Run Out of Battery
+              </h2>
+              <p class="p2 mb-60" data-lang="get-the-app__p2">
+                Download the app now to easily locate nearby power banks and
+                keep your devices charged wherever you are!
+              </p>
+              <div class="get-the-app__download-links_wrapper">
+                <a href="#">
+                  <img src="img/download-ios.svg" alt="ios" />
+                </a>
+                <a href="#">
+                  <img src="img/download-android.svg" alt="android" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="get-the-app__right">
+            <img src="img/get-the-app__img.png" alt="get-the-app__img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="how-it-works m-block">
+      <div class="container">
+        <span class="span how-it-works__span mb-40" data-lang="how-it-works">
+          How It Works
+        </span>
+        <div class="how-it-works__wrapper">
+          <div class="how-it-works__step">
+            <h3 class="h3 how-it-works__step_number">1</h3>
+            <div class="how-it-works__step_info-wrapper">
+              <h3 class="h3 how-it-works__h3" data-lang="hiw__h3_1">
+                Download the app
+              </h3>
+              <p class="p2 how-it-works__p2" data-lang="hiw__p2_1">
+                Install our app on your device.
+              </p>
+            </div>
+          </div>
+          <div class="how-it-works__step">
+            <h3 class="h3 how-it-works__step_number">2</h3>
+            <div class="how-it-works__step_info-wrapper">
+              <h3 class="h3 how-it-works__h3" data-lang="hiw__h3_2">
+                Find and scan
+              </h3>
+              <p class="p2 how-it-works__p2" data-lang="hiw__p2_1">
+                Use the map in the app to locate a nearby power bank and scan
+                the QR code.
+              </p>
+            </div>
+          </div>
+          <div class="how-it-works__step">
+            <h3 class="h3 how-it-works__step_number">3</h3>
+            <div class="how-it-works__step_info-wrapper">
+              <h3 class="h3 how-it-works__h3" data-lang="hiw__h3_3">
+                Rent the power bank
+              </h3>
+              <p class="p2 how-it-works__p2" data-lang="hiw__p2_3">
+                Select the power bank you need and rent it via the app.
+              </p>
+            </div>
+          </div>
+          <div class="how-it-works__step">
+            <h3 class="h3 how-it-works__step_number">4</h3>
+            <div class="how-it-works__step_info-wrapper">
+              <h3 class="h3 how-it-works__h3" data-lang="hiw__h3_4">
+                Use and return
+              </h3>
+              <p class="p2 how-it-works__p2" data-lang="hiw__p2_4">
+                Use the power bank and return it to the nearest station when
+                you're done.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="price m-block">
+      <div class="container">
+        <span class="span price__span mb-40" data-lang="hiw__span">
+          Affordable Rental Plans
+        </span>
+        <h2 class="h2 price__h2 mb-40" data-lang="hiw__h2">
+          Simple Pricing, No Hidden Fees
+        </h2>
+        <div class="price__wrapper">
+          <div class="price__item">
+            <h3 class="h3 price__h3" data-lang="price__h3_1">First Hour</h3>
+            <div
+              class="price__itself_container price__free"
+              data-lang="price__price-itself_1"
+            >
+              Free
+            </div>
+            <p class="price__subtext" data-lang="price__subtext_1">
+              *Free for new users after registration
+            </p>
+          </div>
+          <div class="price__item price__item_popular">
+            <h3 class="h3 price__h3" data-lang="price__h3_2">After 1 Hour</h3>
+            <div class="price__itself_container">
+              $2 <span data-lang="per-hour">/per hour</span>
+            </div>
+            <span class="span__popular-tag" data-lang="popular"> popular </span>
+          </div>
+          <div class="price__item">
+            <h3 class="h3 price__h3" data-lang="price__h3_3">Full Day</h3>
+            <div class="price__itself_container">
+              $10 <span data-lang="per-day">/per day</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wmud m-block">
+      <div class="container">
+        <span class="span wmud__span mb-40" data-lang="wmud__span">
+          What Makes Us Different
+        </span>
+        <div class="wmud__wrapper">
+          <div class="wmud__item-left">
+            <div class="wmus__item_wrapper wmud__first">
+              <div class="wmus__item_top-wrapper">
+                <div class="wmus__item_wrapper-icon">
+                  <img src="img/location-icon.svg" alt="location" />
+                  <h3 class="h3 wmud__h3" data-lang="wmud__h3_1">
+                    Convenient Locations
+                  </h3>
+                </div>
+              </div>
+              <p class="p2 wmus__p2" data-lang="wmud__p2_1">
+                Find power banks at stations conveniently located throughout the
+                city.
+              </p>
+            </div>
+            <div class="wmus__item_wrapper wmud__second">
+              <div class="wmus__item_top-wrapper">
+                <div class="wmus__item_wrapper-icon">
+                  <img
+                    src="img/user-friendly-icon.svg"
+                    alt="user-friendly-icon"
+                  />
+                  <h3 class="h3 wmud__h3" data-lang="wmud__h3_2">
+                    User-Friendly App
+                  </h3>
+                </div>
+              </div>
+              <p class="p2 wmus__p2" data-lang="wmud__p2_2">
+                Easily locate, rent, and return power banks in just a few taps.
+              </p>
+            </div>
+          </div>
+          <div class="wmud__item-right">
+            <div class="wmus__item_wrapper wmud__third">
+              <div class="wmus__item_top-wrapper">
+                <div class="wmus__item_wrapper-icon">
+                  <img src="img/quality-icon.svg" alt="quality-icon" />
+                  <h3 class="h3 wmud__h3" data-lang="wmud__h3_3">
+                    High-Quality Devices
+                  </h3>
+                </div>
+              </div>
+              <p class="p2 wmus__p2" data-lang="wmud__p2_3">
+                Our power banks are reliable, fast-charging, and compatible with
+                most devices
+              </p>
+            </div>
+            <div class="wmus__item_wrapper wmud__fourth">
+              <div class="wmus__item_top-wrapper">
+                <div class="wmus__item_wrapper-icon">
+                  <img src="img/price-icon.svg" alt="price-icon" />
+                  <h3 class="h3 wmud__h3" data-lang="wmud__h3_4">
+                    Affordable Pricing
+                  </h3>
+                </div>
+              </div>
+              <p class="p2 wmus__p2" data-lang="wmud__p2_4">
+                Enjoy flexible rental plans that fit your needs, with no hidden
+                fees.
+              </p>
+            </div>
+          </div>
+          <div class="wmud__img">
+            <img
+              src="img/what-makes-us-different__img.png"
+              alt="what-makes-us-different__img"
+            />
+            <!-- <div class="wmud-blur__1">
+              <img src="img/blur_1.svg" alt="blur" />
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map">
+      <div class="container">
+        <span class="span map__span mb-40" data-lang="map__span">
+          Map of Stations
+        </span>
+        <div class="map__info-wrapper">
+          <h2 class="h2 map__h2 mb-20" data-lang="map__h2">
+            Find the Nearest Charging Station
+          </h2>
+          <p class="p2 map__p2 mb-40" data-lang="map__p2">
+            Easily find all nearby power bank stations and stay powered up
+            wherever you are!
+          </p>
+          <div class="map__btn_wrapper mb-40">
+            <button class="btn btn-main" data-lang="map__btn">
+              Find Stations Near Me
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="map-with-stations">
+        <div id="map"></div>
+      </div>
+    </div>
+    <div class="download-app m-block">
+      <div class="downoad-app__top">
+        <div class="container">
+          <div class="download-app__info-wrapper">
+            <div class="download-app__info">
+              <h2 class="h2 download-app__h2" data-lang="download-app__h2">
+                Battery boost at the cost of a bottle of water
+              </h2>
+              <p class="p2 download-app__p2 mb-40" data-lang="download-app__p2">
+                Quick, easy, and budget-friendly – download the app to stay
+                connected
+              </p>
+              <div class="download-app__links">
+                <a href="#">
+                  <img src="img/download-ios.svg" alt="download-ios" />
+                </a>
+                <a href="#">
+                  <img src="img/download-android.svg" alt="download-android" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="download-app__bottom">
+        <div class="container download-app__bottom_container">
+          <img
+            src="img/download-app__phone.png"
+            alt="download-app__phone"
+            class="download-app__img"
+          />
+        </div>
+        <div class="download-app__bottom_wrapper">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h3 class="h3 download-app__h3" data-lang="slider__h3-1">
+                  Secure Payments
+                </h3>
+                <p class="p2 download-app__p2" data-lang="slider__p-1">
+                  Make quick and safe payments directly through the app.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="h3 download-app__h3" data-lang="slider__h3-2">
+                  User-Friendly Interface
+                </h3>
+                <p class="p2 download-app__p2" data-lang="slider__p-2">
+                  Easily rent, track, and return power banks with a simple app
+                  design.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="h3 download-app__h3" data-lang="slider__h3-3">
+                  Real-Time Tracking
+                </h3>
+                <p class="p2 download-app__p2" data-lang="slider__p-3">
+                  Know exactly where to find a station at any moment with our
+                  live map.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="h3 download-app__h3" data-lang="slider__h3-4">
+                  Exclusive Deals
+                </h3>
+                <p class="p2 download-app__p2" data-lang="slider__p-4">
+                  Enjoy discounts and perks available only for app users.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="h3 download-app__h3" data-lang="slider__h3-5">
+                  Sustainable Solution
+                </h3>
+                <p class="p2 download-app__p2" data-lang="slider__p-5">
+                  Choose eco-friendly reusable power banks to help reduce waste.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="h3 download-app__h3" data-lang="slider__h3-1">
+                  Secure Payments
+                </h3>
+                <p class="p2 download-app__p2" data-lang="slider__p-1">
+                  Make quick and safe payments directly through the app.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="h3 download-app__h3" data-lang="slider__h3-2">
+                  User-Friendly Interface
+                </h3>
+                <p class="p2 download-app__p2" data-lang="slider__p-2">
+                  Easily rent, track, and return power banks with a simple app
+                  design.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="h3 download-app__h3" data-lang="slider__h3-3">
+                  Real-Time Tracking
+                </h3>
+                <p class="p2 download-app__p2" data-lang="slider__p-3">
+                  Know exactly where to find a station at any moment with our
+                  live map.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="h3 download-app__h3" data-lang="slider__h3-4">
+                  Exclusive Deals
+                </h3>
+                <p class="p2 download-app__p2" data-lang="slider__p-4">
+                  Enjoy discounts and perks available only for app users.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="h3 download-app__h3" data-lang="slider__h3-5">
+                  Sustainable Solution
+                </h3>
+                <p class="p2 download-app__p2" data-lang="slider__p-5">
+                  Choose eco-friendly reusable power banks to help reduce waste.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section_form m-block">
+      <div class="container">
+        <span class="span form__span mb-40" data-lang="form__span">
+          Get in Touch
+        </span>
+        <div class="form__outer-wrapper">
+          <h2 class="h2 form__h2 mb-20" data-lang="form__h2">
+            Looking to Partner or Need Support?
+          </h2>
+          <p class="p2 form__p2 mb-20" data-lang="form__p2">
+            Need help, have feedback, or want to partner with us? Fill out the
+            form below, and we’ll get back to you soon
+          </p>
+          <form action="https://formspree.io/f/xanqvodl" class="form" method="post" id="TheForm">
+            <div class="form__wrapper">
+              <div class="input__wrapper input__wrapper-first">
+                <input
+                  type="text"
+                  placeholder="*your name"
+                  name="name"
+                  class="input-text"
+                  id="name"
+                  data-lang="placeholder__name"
+                />
+                <span class="input__error input__error-name"> oshibka </span>
+              </div>
+              <div class="input__wrapper input__wrapper-second">
+                <input
+                  type="text"
+                  placeholder="*e-mail or phone number"
+                  name="e-mail-or-phone"
+                  id="e-mail-or-phone"
+                  class="input-text"
+                  data-lang="placeholder__email_or_phone"
+                />
+                <span class="input__error input__error-name"> oshibka </span>
+              </div>
+
+              <div class="checkbox__wrapper">
+                <label for="chexbox">
+                  <input type="checkbox" name="checkbox" id="chexbox" required />
+                  <p data-lang="checkbox__p">
+                    By submitting this form, you consent to the processing of
+                    your personal data.
+                  </p>
+                </label>
+                <button class="btn btn-main form__btn" data-lang="form__send">
+                  send
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="blur__2">
+            <img src="img/blur__2.svg" alt="blur__2" />
+          </div>
+        </div>
+        <div class="form__img">
+          <img src="img/form__img.png" alt="form__img" />
+        </div>
+      </div>
+    </div>
+    <!-- попап когда форма валидирована -->
+    <div class="form__success">
+      <div class="form__success_wrapper">
+        <button class="form__success_close">
+          <img src="img/close__btn.svg" alt="close" />
+        </button>
+        <div class="form__success_wrapper-inner">
+          <h2 class="h2 form__success_h2" data-lang="form__success_h2">
+            Thank you for your submission!
+          </h2>
+          <p class="p2 form__success_p2" data-lang="form__success_p2">
+            We’ll be in touch shortly to discuss the next steps. Looking forward
+            to working with you!
+          </p>
+          <button
+            class="btn btn-main form__success_btn"
+            data-lang="form__success_btn"
+          >
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="contacts m-block">
+      <div class="container">
+        <ul class="contacts__social">
+          <li class="contacts__social_item">
+            <a href="#">
+              <img
+                src="./img/icons/dark/facebook.svg"
+                alt="facebook"
+                class="img-dark"
+              />
+              <img
+                src="./img/icons/white/facebook-white.svg"
+                alt="facebook"
+                class="img-white"
+              />
+            </a>
+          </li>
+          <li class="contacts__social_item">
+            <a href="#">
+              <img
+                src="./img/icons/dark/instagram.svg"
+                alt="instagram"
+                class="img-dark"
+              />
+              <img
+                src="./img/icons/white/instagram-white.svg"
+                alt="instagram"
+                class="img-white"
+              />
+            </a>
+          </li>
+          <li class="contacts__social_item">
+            <a href="#">
+              <img
+                src="./img/icons/dark/tiktok.svg"
+                alt="tiktok"
+                class="img-dark"
+              />
+              <img
+                src="./img/icons/white/tiktok-white.svg"
+                alt="tiktok"
+                class="img-white"
+              />
+            </a>
+          </li>
+          <li class="contacts__social_item">
+            <a href="#">
+              <img
+                src="./img/icons/dark/whatsapp.svg"
+                alt="whatsapp"
+                class="img-dark"
+              />
+              <img
+                src="./img/icons/white/whatsapp-white.svg"
+                alt="whatsapp"
+                class="img-white"
+              />
+            </a>
+          </li>
+        </ul>
+        <div class="contacts__communication">
+          <a href="mailto:powerup@gmail.com">powerup@gmail.com</a>
+          <a href="tel:+48555555555">+48 55 555 55 55</a>
+        </div>
+      </div>
+    </div>
+    <!-- другая страница -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__right">
+          <div class="footer__right_logos">
+            <a href="#" class="footer__logo">
+              <img src="img/footer__logo.svg" alt="powerup" />
+            </a>
+            <div class="footer_payments_logos">
+              <img src="img/mastercard.svg" alt="mastercard" />
+              <img src="img/visa.svg" alt="visa" />
+              <img src="img/paypal.svg" alt="paypal" />
+            </div>
+          </div>
+          <div class="footer__right_links">
+            <a href="#" data-lang="become_a_partner"> Become a partner </a>
+            <a
+              href="#"
+              data-lang="find_the_nearest_station"
+              id="find_the_nearest_station"
+            >
+              Find the nearest station
+            </a>
+            <a href="#" data-lang="pricing_policy" id="pricing_policy">
+              Pricing policy
+            </a>
+            <a href="#" data-lang="faq" id="FAQ"> FAQ </a>
+          </div>
+        </div>
+        <div class="footer__left">
+          <div class="footer__left_communication">
+            <a href="mailto:powerup@gmail.com">powerup@gmail.com</a>
+            <a href="tel:48555555555">+48 55 555 55 55</a>
+          </div>
+          <div class="footer__download-links">
+            <a href="#">
+              <img src="img/download-ios.svg" alt="ios" />
+            </a>
+            <a href="#">
+              <img src="img/download-android.svg" alt="android" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom_right">
+            <p>PowerUp © 2025</p>
+            <p data-lang="all_rights_reserved">All rights reserved</p>
+            <a href="#" data-lang="policy">Policy</a>
+            <a href="#" data-lang="terms_of_use">Terms of use</a>
+          </div>
+          <div class="footer__bottom_left">
+            <ul class="contacts__social">
+              <li class="contacts__social_item">
+                <a href="#">
+                  <img
+                    src="./img/icons/white/facebook-white.svg"
+                    alt="facebook"
+                  />
+                </a>
+              </li>
+              <li class="contacts__social_item">
+                <a href="#">
+                  <img
+                    src="./img/icons/white/instagram-white.svg"
+                    alt="instagram"
+                  />
+                </a>
+              </li>
+              <li class="contacts__social_item">
+                <a href="#">
+                  <img src="./img/icons/white/tiktok-white.svg" alt="tiktok" />
+                </a>
+              </li>
+              <li class="contacts__social_item">
+                <a href="#">
+                  <img
+                    src="./img/icons/white/whatsapp-white.svg"
+                    alt="whatsapp"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="language.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
