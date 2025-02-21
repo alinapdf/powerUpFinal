@@ -29,6 +29,10 @@ body.dark .faq__h3 {
   background: var(--white);
   -webkit-background-clip: text;
 }
+body.dark .form__success_h2,
+body.dark .form__success_p2 {
+  color: var(--black);
+}
 
 .header {
   margin-top: 40px;

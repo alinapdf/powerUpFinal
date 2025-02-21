@@ -28,6 +28,11 @@ body.dark {
     background: var(--white);
     -webkit-background-clip: text;
   }
+
+  .form__success_h2,
+  .form__success_p2 {
+    color: var(--black);
+  }
 }
 
 // header
