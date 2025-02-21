@@ -142,7 +142,7 @@ const popUp = document.querySelector(".form__success");
 
 document
   .querySelector(".form__btn")
-  .addEventListener("click", function (event) {
+  .addEventListener("click", async function (event) {
     event.preventDefault();
 
     const inputs = document.querySelectorAll(".input__wrapper");
@@ -231,7 +231,11 @@ document
 
     if (isValid) {
       const TheForm = document.getElementById("TheForm");
-      TheForm.submit();
+      const data = new URLSearchParams(new FormData(TheForm));
+      const result = await fetch('https://formspree.io/f/xanqvodl',
+        {method: 'post', body: data, redirect: 'manual'});
+
+      
       // Можно отправлять форму
       popUp.classList.add("active");
     }
