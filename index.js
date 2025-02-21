@@ -305,10 +305,12 @@ document
     if (isValid) {
       const TheForm = document.getElementById("TheForm");
       const data = new URLSearchParams(new FormData(TheForm));
-      const result = await fetch('https://formspree.io/f/xanqvodl',
-        {method: 'post', body: data, redirect: 'manual'});
+      const result = await fetch("https://formspree.io/f/xldgvrlz", {
+        method: "post",
+        body: data,
+        redirect: "manual",
+      });
 
-      
       // Можно отправлять форму
       popUp.classList.add("active");
     }
