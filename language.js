@@ -42,7 +42,7 @@ const languages = {
       "Use the power bank and return it to the nearest station when you're done.",
     hiw__span: "Affordable Rental Plans",
     hiw__h2: "Simple Pricing, No Hidden Fees",
-    price__h3_1: "First Hour",
+    price__h3_1: "The first 15 minutes",
     "price__price-itself_1": "Free",
     price__subtext_1: "*Free for new users after registration",
     price__h3_2: "After 1 Hour",
