@@ -702,7 +702,7 @@ body.dark {
 
 .download-app__h2 {
   margin-bottom: 16px;
-  line-height: 1.1;
+  line-height: 1.1 !important;
 }
 
 .swiper {
@@ -759,7 +759,7 @@ body.dark {
 
   .download-app__p2 {
     max-width: 400px;
-    line-height: 0.9;
+    line-height: 0.9 !important;
   }
 }
 

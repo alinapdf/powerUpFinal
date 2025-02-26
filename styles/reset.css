@@ -5,6 +5,8 @@
   margin: 0;
   border: none;
   box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -webkit-line-break: after-white-space;
 }
 
 /* links */
