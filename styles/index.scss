@@ -33,6 +33,9 @@ body.dark {
   .form__success_p2 {
     color: var(--black);
   }
+  .for-business__link {
+    color: var(--white) !important;
+  }
 }
 
 // header
@@ -41,6 +44,7 @@ body.dark {
   margin-top: 40px;
   .logo-link {
     padding-bottom: 12px;
+    max-width: 150px;
   }
   &__wrapper {
     display: flex;

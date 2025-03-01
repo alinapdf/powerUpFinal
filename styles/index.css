@@ -33,12 +33,16 @@ body.dark .form__success_h2,
 body.dark .form__success_p2 {
   color: var(--black);
 }
+body.dark .for-business__link {
+  color: var(--white) !important;
+}
 
 .header {
   margin-top: 40px;
 }
 .header .logo-link {
   padding-bottom: 12px;
+  max-width: 150px;
 }
 .header__wrapper {
   display: flex;

@@ -207,7 +207,7 @@ const languages = {
       "Korzystaj z power banku i zwróć go do najbliższej stacji po zakończeniu użytkowania",
     hiw__span: "Niedrogie plany wynajmu",
     hiw__h2: "Proste ceny, żadnych ukrytych opłat",
-    price__h3_1: "Pierwsza godzina",
+    price__h3_1: "Pierwsze 15 minut",
     "price__price-itself_1": "Za darmo",
     price__subtext_1: "*Darmowe dla nowych użytkowników po rejestracji",
     price__h3_2: "Po 1 godzinie",
