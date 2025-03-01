@@ -33,8 +33,10 @@ body.dark {
   .form__success_p2 {
     color: var(--black);
   }
-  .for-business__link {
+  &a.for-business__link {
     color: var(--white) !important;
+    -webkit-text-fill-color: var(--white);
+    white-space: nowrap;
   }
 }
 
