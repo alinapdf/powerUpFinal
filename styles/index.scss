@@ -17,6 +17,12 @@ body.dark {
   }
   .btn-second {
     border: 1px solid var(--white);
+    #for-business__link,
+    .for-business__link {
+      border: 1px solid var(--black);
+      background-color: var(--white);
+      white-space: nowrap;
+    }
   }
   .header--mobile {
     background-color: var(--black);

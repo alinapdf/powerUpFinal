@@ -19,6 +19,12 @@ body.dark button {
 body.dark .btn-second {
   border: 1px solid var(--white);
 }
+body.dark .btn-second #for-business__link,
+body.dark .btn-second .for-business__link {
+  border: 1px solid var(--black);
+  background-color: var(--white);
+  white-space: nowrap;
+}
 body.dark .header--mobile {
   background-color: var(--black);
 }
