@@ -45,6 +45,14 @@ body.dark .form__success_p2 {
   background-color: var(--white);
 }
 
+.btn-second #for-business__link,
+.btn-second .for-business__link {
+  border: 1px solid var(--black) !important;
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+  white-space: nowrap;
+}
+
 .header {
   margin-top: 40px;
 }
