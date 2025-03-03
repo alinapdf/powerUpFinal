@@ -33,11 +33,16 @@ body.dark {
   .form__success_p2 {
     color: var(--black);
   }
-  a.for-business__link {
-    color: var(--white) !important;
-    -webkit-text-fill-color: var(--white);
-    white-space: nowrap;
-  }
+  // a.for-business__link {
+  //   color: var(--white) !important;
+  //   -webkit-text-fill-color: var(--white);
+  //   white-space: nowrap;
+  // }
+}
+
+#for-business__link {
+  border: 1px solid var(--black);
+  background-color: var(--white);
 }
 
 // header
