@@ -40,17 +40,13 @@ body.dark .form__success_p2 {
   color: var(--black);
 }
 
-#for-business__link {
-  border: 1px solid var(--black);
-  background-color: var(--white);
-}
-
-.btn-second #for-business__link,
-.btn-second .for-business__link {
+#for-business__link,
+.for-business__link {
   border: 1px solid var(--black) !important;
   background-color: var(--white) !important;
   color: var(--black) !important;
   white-space: nowrap;
+  color: var(--black);
 }
 
 .header {

@@ -46,21 +46,17 @@ body.dark {
   // }
 }
 
-#for-business__link {
-  border: 1px solid var(--black);
-  background-color: var(--white);
-}
-
 // body.dark {
-.btn-second {
-  #for-business__link,
-  .for-business__link {
-    border: 1px solid var(--black) !important;
-    background-color: var(--white) !important;
-    color: var(--black) !important;
-    white-space: nowrap;
-  }
+// .btn-second {
+#for-business__link,
+.for-business__link {
+  border: 1px solid var(--black) !important;
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+  white-space: nowrap;
+  color: var(--black);
 }
+// }
 // }
 
 // header
