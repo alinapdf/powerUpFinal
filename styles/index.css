@@ -33,7 +33,7 @@ body.dark .form__success_h2,
 body.dark .form__success_p2 {
   color: var(--black);
 }
-body.darka.for-business__link {
+body.dark a.for-business__link {
   color: var(--white) !important;
   -webkit-text-fill-color: var(--white);
   white-space: nowrap;
