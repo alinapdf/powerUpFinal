@@ -305,7 +305,7 @@ document
     if (isValid) {
       const TheForm = document.getElementById("TheForm");
       const data = new URLSearchParams(new FormData(TheForm));
-      const result = await fetch("https://formspree.io/f/xldgvrlz", {
+      const result = await fetch("https://formspree.io/f/mldjdgyk", {
         method: "post",
         body: data,
         redirect: "manual",
