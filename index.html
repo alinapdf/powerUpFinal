@@ -62,7 +62,7 @@
               >
                 For business
               </a>
-              <button class="btn btn-main" data-lang="download-app">
+              <button id="downloadAppBtn" class="btn btn-main" data-lang="download-app">
                 Download app
               </button>
             </div>
@@ -806,5 +806,21 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="language.js"></script>
     <script src="index.js"></script>
+    <script>
+  document.getElementById("downloadAppBtn").addEventListener("click", function(e) {
+    e.preventDefault();
+
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+      // Android → Google Play
+      window.location.href = "https://play.google.com/store/apps/details?id=app.powerup&hl=en";
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      // iOS → App Store
+      window.location.href = "https://apps.apple.com/az/app/powerup-power-on-the-go/id6744092819";
+    } else {
+    }
+  });
+   </script>
   </body>
 </html>
